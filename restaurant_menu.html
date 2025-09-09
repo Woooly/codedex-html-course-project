@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Golden Spoon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff8f0;
+        margin: 0;
+      }
+      header {
+        background: #652a0e;
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #header-img {
+        height: 60px;
+      }
+      nav ul {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav a {
+        color: #f37107;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+      h1 {
+        color: #f37107;
+      }
+      main {
+        max-width: 900px;
+        margin: 32px auto;
+        padding: 0 16px;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      .menu-items {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+      }
+      article {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        padding: 16px;
+        width: 260px;
+        text-align: center;
+      }
+      article img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 12px;
+      }
+      .price {
+        font-style: italic;
+        color: #f7750b;
+      }
+      form {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        padding: 24px;
+        max-width: 500px;
+        margin: auto;
+      }
+      label {
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 4px;
+        font-weight: bold;
+      }
+      .inline-label {
+        display: inline-block;
+        margin-right: 12px;
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      input[type="number"] {
+        width: 60px;
+        padding: 4px;
+        margin-right: 12px;
+      }
+      textarea {
+        width: 100%;
+        min-height: 60px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        padding: 8px;
+      }
+      input[type="submit"] {
+        background: #f7750b;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 24px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 16px;
+      }
+      footer {
+        background: #fff;
+        text-align: center;
+        padding: 18px 0;
+        color: #f7750b;
+        font-size: 1.1rem;
+        margin-top: 40px;
+        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        id="header-img"
+        src="thegoldenspoon.png"
+        alt="Logo The Golden Spoon"
+      />
+      <h1>The Golden Spoon</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order-form">Place Your Order</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-items">
+          <div style="display: flex; gap: 32px; margin-bottom: 32px">
+            <article>
+              <img src="steak.jpeg" alt="Classic Steak" />
+              <h3>Classic Steak</h3>
+              <p>
+                Delicioso corte de carne grelhado, servido com molho
+                especial.<br />
+                <span class="price">R$ 59,90</span>
+              </p>
+            </article>
+            <article>
+              <img src="burger.jpeg" alt="Zoink Burger" />
+              <h3>Zoink Burger</h3>
+              <p>
+                Hambúrguer artesanal com queijo, bacon e cebola caramelizada.<br />
+                <span class="price">R$ 39,90</span>
+              </p>
+            </article>
+            <article>
+              <img src="salad.jpeg" alt="Fresh Salad" />
+              <h3>Fresh Salad</h3>
+              <p>
+                Mix de folhas frescas, tomate, croutons e molho da casa.<br />
+                <span class="price">R$ 29,90</span>
+              </p>
+            </article>
+          </div>
+          <div style="display: flex; gap: 32px">
+            <article>
+              <img src="pastaprimavera.jpeg" alt="Pasta Primavera" />
+              <h3>Pasta Primavera</h3>
+              <p>
+                Macarrão ao molho de legumes frescos e ervas.<br />
+                <span class="price">R$ 34,90</span>
+              </p>
+            </article>
+            <article>
+              <img src="grilledsalmon.jpeg" alt="Grilled Salmon" />
+              <h3>Grilled Salmon</h3>
+              <p>
+                Salmão grelhado com limão e ervas, acompanhado de legumes.<br />
+                <span class="price">R$ 49,90</span>
+              </p>
+            </article>
+            <article>
+              <img src="veggiebowl.jpeg" alt="Veggie Bowl" />
+              <h3>Veggie Bowl</h3>
+              <p>
+                Tigela de arroz integral, legumes assados e molho especial.<br />
+                <span class="price">R$ 27,90</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+          <label for="steak">Classic Steak (R$ 59,90):</label>
+          <input type="number" id="steak" name="steak" min="0" value="0" />
+          <label for="burger">Zoink Burger (R$ 39,90):</label>
+          <input type="number" id="burger" name="burger" min="0" value="0" />
+          <label for="salad">Fresh Salad (R$ 29,90):</label>
+          <input type="number" id="salad" name="salad" min="0" value="0" />
+          <label for="pasta">Pasta Primavera (R$ 34,90):</label>
+          <input type="number" id="pasta" name="pasta" min="0" value="0" />
+          <label for="salmon">Grilled Salmon (R$ 49,90):</label>
+          <input type="number" id="salmon" name="salmon" min="0" value="0" />
+          <label for="veggiebowl">Veggie Bowl (R$ 27,90):</label>
+          <input
+            type="number"
+            id="veggiebowl"
+            name="veggiebowl"
+            min="0"
+            value="0"
+          />
+          <label>Sides:</label>
+          <input type="checkbox" name="side" value="fries" id="fries" />
+          <label for="fries" class="inline-label">Batata Frita</label>
+          <input
+            type="checkbox"
+            name="side"
+            value="salad-side"
+            id="salad-side"
+          />
+          <label for="salad-side" class="inline-label">Salada</label>
+          <input type="checkbox" name="side" value="rice" id="rice" />
+          <label for="rice" class="inline-label">Arroz</label>
+          <label>Bebida:</label>
+          <input
+            type="radio"
+            name="drink"
+            value="refrigerante"
+            id="refrigerante"
+          />
+          <label for="refrigerante" class="inline-label">Refrigerante</label>
+          <input type="radio" name="drink" value="suco" id="suco" />
+          <label for="suco" class="inline-label">Suco</label>
+          <input type="radio" name="drink" value="agua" id="agua" />
+          <label for="agua" class="inline-label">Água</label>
+          <label for="special">Observações / Pedido especial:</label>
+          <textarea
+            id="special"
+            name="special"
+            placeholder="Escreva aqui seu pedido especial..."
+          ></textarea>
+          <input type="submit" value="Go To Checkout" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Made with love by Woooly</p>
+    </footer>
+  </body>
+</html>
